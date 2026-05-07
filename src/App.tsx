@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   const downloadOptions = [
-    { name: 'macOS', detail: 'Universal · dmg', icon: <Apple size={18} />, url: DMG_DOWNLOAD_URL, available: true },
+    { name: 'macOS', detail: 'Apple Silicon · aarch64', icon: <Apple size={18} />, url: DMG_DOWNLOAD_URL, available: true },
     { name: 'Windows', detail: 'x64 · msi', icon: <MonitorIcon size={18} />, url: GITHUB_RELEASES_URL, available: false },
     { name: 'Linux', detail: 'AppImage · deb', icon: <Terminal size={18} />, url: GITHUB_RELEASES_URL, available: false },
   ];
