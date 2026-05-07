@@ -5,7 +5,7 @@ import { Apple, ChevronDown, MonitorIcon, Terminal } from 'lucide-react';
 import { ThemeToggle } from './components/ThemeToggle';
 import './index.css';
 
-const DMG_DOWNLOAD_URL = "https://github.com/echowang1/gitfm/releases/download/v0.1.0/GitFM_0.1.0_aarch64.dmg";
+const DMG_DOWNLOAD_URL = "https://github.com/echowang1/gitfm-download/releases/download/v0.1.0/GitFM_0.1.0_aarch64.dmg";
 const GITHUB_RELEASES_URL = "https://github.com/echowang1/gitfm/releases";
 
 function App() {
