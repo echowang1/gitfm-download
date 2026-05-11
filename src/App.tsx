@@ -7,7 +7,7 @@ import './index.css';
 
 const DMG_DOWNLOAD_URL = "https://github.com/echowang1/gitfm-download/releases/download/v0.1.1/GitFM_0.1.1_aarch64.dmg";
 const GITHUB_RELEASES_URL = "https://github.com/echowang1/gitfm/releases";
-const SHA256_HASH = "b16a1b490ea1620a4b2a04bff684a032fbaa5aec028543ec66409c708f383d90";
+const SHA256_HASH = "0234eb642be8309ad5c305daf40fce08ac517f66b52b28be11e10530d564eec9";
 
 function App() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
