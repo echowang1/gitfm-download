@@ -5,7 +5,7 @@ import { Apple, ChevronDown, MonitorIcon, Terminal } from 'lucide-react';
 import { ThemeToggle } from './components/ThemeToggle';
 import './index.css';
 
-const DMG_DOWNLOAD_URL = "https://github.com/echowang1/gitfm-download/releases/download/v0.1.0/GitFM_0.1.0_aarch64.dmg";
+const DMG_DOWNLOAD_URL = "https://github.com/echowang1/gitfm/releases/download/v0.1.1/GitFM_0.1.1_aarch64.dmg";
 const GITHUB_RELEASES_URL = "https://github.com/echowang1/gitfm/releases";
 
 function App() {
@@ -137,7 +137,7 @@ function App() {
 
               <motion.div layout className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] text-[var(--text-muted)] font-mono transition-all">
                 <div className="flex items-center gap-6">
-                  <span>v0.1.0</span>
+                  <span>v0.1.1</span>
                   <span className="opacity-20">·</span>
                   <a href="https://github.com/echowang1/gitfm/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--text-color)] transition-colors border-b border-transparent hover:border-[var(--text-color)]">
                     MIT 许可证
@@ -148,7 +148,7 @@ function App() {
                     其他版本
                   </a>
                   <span onClick={() => window.open(GITHUB_RELEASES_URL, '_blank')} className="hover:text-[var(--text-color)] cursor-pointer transition-colors border-b border-transparent hover:border-[var(--text-color)]">
-                    校验和
+                    校验和贡献
                   </span>
                 </div>
               </motion.div>
@@ -158,7 +158,7 @@ function App() {
       </div>
 
       <footer className="h-16 border-t border-[var(--border-color)] flex items-center justify-between px-10 bg-[var(--bg-color)] z-40 text-[10px] opacity-30 uppercase tracking-[0.3em] font-bold shrink-0">
-        <div>© 2024 GITFM_NODES</div>
+        <div>© 2026 GITFM_NODES</div>
         <div>BUILT_FOR_DEVELOPERS_BY_DEVELOPERS</div>
       </footer>
     </div>
