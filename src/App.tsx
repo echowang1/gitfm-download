@@ -5,8 +5,9 @@ import { Apple, ChevronDown, MonitorIcon, Terminal } from 'lucide-react';
 import { ThemeToggle } from './components/ThemeToggle';
 import './index.css';
 
-const DMG_DOWNLOAD_URL = "https://github.com/echowang1/gitfm/releases/download/v0.1.1/GitFM_0.1.1_aarch64.dmg";
+const DMG_DOWNLOAD_URL = "https://github.com/echowang1/gitfm-download/releases/download/v0.1.1/GitFM_0.1.1_aarch64.dmg";
 const GITHUB_RELEASES_URL = "https://github.com/echowang1/gitfm/releases";
+const SHA256_HASH = "b16a1b490ea1620a4b2a04bff684a032fbaa5aec028543ec66409c708f383d90";
 
 function App() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
@@ -147,8 +148,8 @@ function App() {
                   <a href={GITHUB_RELEASES_URL} target="_blank" rel="noopener noreferrer" className="hover:text-[var(--text-color)] transition-colors border-b border-transparent hover:border-[var(--text-color)]">
                     其他版本
                   </a>
-                  <span onClick={() => window.open(GITHUB_RELEASES_URL, '_blank')} className="hover:text-[var(--text-color)] cursor-pointer transition-colors border-b border-transparent hover:border-[var(--text-color)]">
-                    校验和贡献
+                  <span className="hover:text-[var(--text-color)] transition-colors cursor-pointer" onClick={() => navigator.clipboard.writeText(SHA256_HASH)}>
+                    SHA256: {SHA256_HASH.slice(0, 16)}...
                   </span>
                 </div>
               </motion.div>
